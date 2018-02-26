@@ -25,15 +25,14 @@ module.exports = {
                 'css-loader',
                 'sass-loader'
             ]
-        }, 
-        // {
-        //     test: /\.(eot|svg|ttf|woff|woff2)$/,
-        //     loader: 'file-loader',
-        //     options: {
-        //         name: '[path][name].[ext]',
-        //         publicPath: 'fonts/'
-        //     }
-        // }
+        }, {
+            test: /\.(ttf|eot|woff|woff2)$/,
+            loader: 'file-loader',
+            exclude: /node_modules/,
+            options: {
+              name: '[path]][name].[ext]'
+            },
+          },
         ]
     },
     devServer: {

@@ -5,3 +5,29 @@
 @import './components/header';
 @import './components/impression';
 @import './components/quote';
+
+@font-face {
+  font-family: Budmo;
+  src: url('./fonts/Budmo.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Limelight;
+  src: url('./fonts/Limelight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Queen;
+  src: url('./fonts/Queen.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Rialto;
+  src: url('./fonts/Rialto.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: Showtime;
+  src: url('./fonts/Showtime.ttf') format('truetype');
+}
