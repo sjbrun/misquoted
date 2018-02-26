@@ -1,0 +1,19 @@
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 $m-size;
+  border-radius: 0.2rem;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  margin-bottom: $xl-size;
+}
+
+.sub-box {
+  width: 50%;
+  background: $off-white;
+  margin: 0 auto;
+  padding: $xl-size $xl-size;
+}

@@ -1,0 +1,13 @@
+.header {
+  background: $off-black;
+  color: $off-white;
+  margin-bottom: $l-size;
+  padding: $m-size 0;
+}
+
+.header__title {
+  font-size: $xxl-size;
+  font-family: Showtime, Garamond, serif;
+  color: $off-white;
+  margin: 0;
+}

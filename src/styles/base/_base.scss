@@ -1,0 +1,21 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+  background: $stage-curtain;
+}
+
+button {
+  cursor: pointer;
+  max-width: 60rem;
+  display: block;
+  margin: auto;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
