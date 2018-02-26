@@ -9,6 +9,8 @@ const Card = (props) => (
       <Impression 
         impression={props.impression}
         impression_photo={props.impression_photo}
+        selectedDifficulty={props.selectedDifficulty}
+        handleChangeDifficulty={props.handleChangeDifficulty}
       />
     </div>
     <div className="sub-box">

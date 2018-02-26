@@ -4,14 +4,22 @@ import Card from './Card.js';
 import NextButton from './NextButton.js';
 var unirest = require('unirest');
 
-const impressions = ['Sylvester Stallone', 'James Stewart', 'Edward G. Robinson', 'Yoda', 'Bane',
-                     'John F. Kennedy', 'Abraham Lincoln', 'Barack Obama', 'George W. Bush',
-                     'Donald Trump', 'Jimmy Carter', 'Sean Connery', 'Jar Jar Binks',
-                     'Gilbert Gottfried', 'Christopher Walken', 'Batman', 'Matthew McConaughey',
-                     'Nicolas Cage', 'Michael Caine', 'Arnold Schwarzenegger', 'Al Pacino', 
-                     'Robert De Niro', 'Bette Midler', 'Celine Dion', 'Fran Drescher', 'Oprah Winfrey',
-                     'Roseanne Barr', 'Carol Channing', 'Joan Rivers', 'Keanu Reeves', 'Goofy Goof',
-                     ];
+const impressions = {'easy': ['Arnold Schwarzenegger', 'Sylvester Stallone',
+                              'Sean Connery', 'John F. Kennedy', 'Donald Trump',
+                              'Christopher Walken', 'Batman', 'Keanu Reeves',
+                              'Gilbert Gottfried','Matthew McConaughey'
+                             ],
+                     'medium': ['James Stewart','Barack Obama', 'George W. Bush',
+                                'Nicolas Cage', 'Michael Caine', 'Al Pacino',
+                                'Yoda', 'Bane', 'Abraham Lincoln', 'Jar Jar Binks',
+                                'Fran Drescher', 'Celine Dion', 'Robert De Niro',
+                                'Carol Channing', 'Goofy Goof'
+                               ],
+                     'difficult': ['Edward G. Robinson', 'Jimmy Carter', 'Roseanne Barr', 
+                                   'Joan Rivers', 'Bette Midler', 'Oprah Winfrey',
+                                    
+                                  ]
+                    };
 
 const tmdb_api_key = "1feaca5dd33e56039469ade211b65750";
 const flickr_api_key = "a13c6391ad0f202436d9b8f4dffb6431";
@@ -24,7 +32,8 @@ export default class QuoteApp extends React.Component {
     overview: '',
     release_date: '',
     impression: '',
-    impression_photo: ''
+    impression_photo: '',
+    selectedDifficulty: 'easy'
   };
 
   update = () => {
@@ -36,7 +45,7 @@ export default class QuoteApp extends React.Component {
               me.setState((state) => ({
                 quote: response.body.quote,
                 movie: response.body.author,
-                impression: impressions[Math.floor(Math.random() * impressions.length)]
+                impression: impressions[state.selectedDifficulty][Math.floor(Math.random() * impressions[state.selectedDifficulty].length)]
             }), me.updateImages);
             });
   }
@@ -75,6 +84,12 @@ export default class QuoteApp extends React.Component {
            });
   }
 
+  handleChangeDifficulty = (changeEvent) => {
+    this.setState({
+      selectedDifficulty: changeEvent.target.value
+    });
+  }
+
   componentDidUpdate() {
     console.log(this.state);
   }
@@ -98,6 +113,8 @@ export default class QuoteApp extends React.Component {
             release_date={this.state.release_date}
             impression={this.state.impression}
             impression_photo={this.state.impression_photo}
+            selectedDifficulty={this.state.selectedDifficulty}
+            handleChangeDifficulty={this.handleChangeDifficulty}
           />
         </div>
       </div>
