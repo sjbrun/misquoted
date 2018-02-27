@@ -1,33 +1,26 @@
 import React from 'react';
+import RadioButton from './RadioButton.js';
 
 const Impression = (props) => (
   <div>
     <div>
+      <p className="impression__difficulty">Choose impression difficulty:</p>
       <form>
-        <div className="radio">
-          <label>
-            <input type="radio" value="easy" 
-                          checked={props.selectedDifficulty === 'easy'} 
-                          onChange={props.handleChangeDifficulty} />
-            Easy
-          </label>
-        </div>
-        <div className="radio">
-          <label>
-            <input type="radio" value="medium" 
-                          checked={props.selectedDifficulty === 'medium'} 
-                          onChange={props.handleChangeDifficulty} />
-            Medium
-          </label>
-        </div>
-        <div className="radio">
-          <label>
-            <input type="radio" value="difficult" 
-                          checked={props.selectedDifficulty === 'difficult'} 
-                          onChange={props.handleChangeDifficulty} />
-            Difficult
-          </label>
-        </div>
+        <RadioButton
+          difficulty='easy'
+          selectedDifficulty={props.selectedDifficulty}
+          handleChangeDifficulty={props.handleChangeDifficulty}
+        />
+        <RadioButton
+          difficulty='medium'
+          selectedDifficulty={props.selectedDifficulty}
+          handleChangeDifficulty={props.handleChangeDifficulty}
+        />
+        <RadioButton
+          difficulty='difficult'
+          selectedDifficulty={props.selectedDifficulty}
+          handleChangeDifficulty={props.handleChangeDifficulty}
+        />
       </form>
     </div>
     <div>
