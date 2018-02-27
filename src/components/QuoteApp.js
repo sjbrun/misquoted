@@ -13,7 +13,7 @@ const impressions = {'easy': ['Arnold Schwarzenegger', 'Sylvester Stallone',
                                 'Nicolas Cage', 'Michael Caine', 'Al Pacino',
                                 'Bane', 'Abraham Lincoln', 'Jar Jar Binks',
                                 'Fran Drescher', 'Celine Dion', 'Robert De Niro',
-                                'Goofy Goof'
+                                'Goofy Goof', 'Werner Herzog'
                                ],
                      'difficult': ['Edward G. Robinson', 'Jimmy Carter', 'Roseanne Barr', 
                                    'Joan Rivers', 'Bette Midler', 'Oprah Winfrey',
