@@ -7,17 +7,17 @@ var unirest = require('unirest');
 const impressions = {'easy': ['Arnold Schwarzenegger', 'Sylvester Stallone',
                               'Sean Connery', 'John F. Kennedy', 'Donald Trump',
                               'Christopher Walken', 'Batman', 'Keanu Reeves',
-                              'Gilbert Gottfried','Matthew McConaughey'
+                              'Gilbert Gottfried', 'George W. Bush', 'Yoda'
                              ],
-                     'medium': ['James Stewart','Barack Obama', 'George W. Bush',
+                     'medium': ['James Stewart','Barack Obama', 'Matthew McConaughey',
                                 'Nicolas Cage', 'Michael Caine', 'Al Pacino',
-                                'Yoda', 'Bane', 'Abraham Lincoln', 'Jar Jar Binks',
+                                'Bane', 'Abraham Lincoln', 'Jar Jar Binks',
                                 'Fran Drescher', 'Celine Dion', 'Robert De Niro',
-                                'Carol Channing', 'Goofy Goof'
+                                'Goofy Goof'
                                ],
                      'difficult': ['Edward G. Robinson', 'Jimmy Carter', 'Roseanne Barr', 
                                    'Joan Rivers', 'Bette Midler', 'Oprah Winfrey',
-                                    
+                                   'Carol Channing'
                                   ]
                     };
 
