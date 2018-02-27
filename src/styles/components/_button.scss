@@ -2,11 +2,16 @@
   background: $pastel-yellow;
   border: none;
   border-bottom: 0.6rem solid darken($pastel-yellow, 40%);
-  color: black;
+  color: $off-black;
   font-weight: bold;
   font-size: $l-size;
   margin-bottom: $xl-size;
   padding: 2.0rem;
   width: 100%;
   border-radius: 0.2rem;
+}
+
+.big-button:hover {
+  background-color: #ccc;
+  border-bottom: 0.6rem solid darken(#ccc, 40%);
 }

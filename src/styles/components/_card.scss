@@ -1,0 +1,13 @@
+.card__header {
+  font-size: $l-size;
+  color: $off-black;
+  background-color: $pastel-yellow;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card__header span {
+  font-family: Showtime, sans-serif;
+}
