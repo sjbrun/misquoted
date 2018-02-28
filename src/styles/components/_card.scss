@@ -3,11 +3,20 @@
   color: $off-black;
   background-color: $pastel-yellow;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
-  margin: 0 auto;
+  margin: auto;
 }
 
-.card__header span {
-  font-family: Showtime, sans-serif;
+.card__header .impression__title {
+  font-family: Queen, Lato, sans-serif;
+  font-size: $xl-size;
+}
+
+.card__header .movie__title {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Budmo, Showtime, Lato, sans-serif;
+  font-size: $xl-size;
 }

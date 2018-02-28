@@ -38,9 +38,9 @@ export default class QuoteApp extends React.Component {
 
   update = () => {
     const me = this;
-    unirest.get("https://andruxnet-random-famous-quotes.p.mashape.com/?count=10&cat=movies")
-            .header("X-Mashape-Key", "CFNTDXmQQzmsh8PVm9cbsQXzJcgVp1ow9lfjsntqC5362GCI83")
-            .header("X-Mashape-Host", "andruxnet-random-famous-quotes.p.mashape.com")
+    unirest.get('https://andruxnet-random-famous-quotes.p.mashape.com/?count=10&cat=movies')
+            .header('X-Mashape-Key', 'CFNTDXmQQzmsh8PVm9cbsQXzJcgVp1ow9lfjsntqC5362GCI83')
+            .header('X-Mashape-Host', 'andruxnet-random-famous-quotes.p.mashape.com')
             .end(function(response) {
               me.setState((state) => ({
                 quote: response.body.quote,
@@ -67,16 +67,16 @@ export default class QuoteApp extends React.Component {
               }));
           });
 
-    const flickr_search_base = "https://api.flickr.com/services/rest/" + 
-                               "?method=flickr.photos.search&api_key=" + 
-                               flickr_api_key + "&sort=relevance" + "&text=";
+    const flickr_search_base = 'https://api.flickr.com/services/rest/' + 
+                               '?method=flickr.photos.search&api_key=' + 
+                               flickr_api_key + '&sort=relevance' + '&text=';
     const flickr_search_url = flickr_search_base + this.state.impression + 
-                              "&format=json&nojsoncallback=?";
+                              '&format=json&nojsoncallback=?';
     unirest.get(flickr_search_url)
            .end(function(response) {
              const img = response.body.photos.photo[Math.floor(Math.random() * 20)];
-             const flickr_image_path = "https://farm" + img.farm + ".staticflickr.com/" + img.server + 
-                             "/" + img.id + "_" + img.secret + ".jpg";
+             const flickr_image_path = 'https://farm' + img.farm + '.staticflickr.com/' + img.server + 
+                             '/' + img.id + '_' + img.secret + '.jpg';
              console.log('FLICKR:', flickr_image_path);
              me.setState((state) => ({
                impression_photo: flickr_image_path
@@ -101,7 +101,7 @@ export default class QuoteApp extends React.Component {
     return (
       <div>
         <Header />
-        <div className="container">
+        <div>
           <NextButton
             update={this.update}
           />

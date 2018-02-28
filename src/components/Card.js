@@ -5,7 +5,7 @@ import Impression from './Impression.js';
 import CardHeader from './CardHeader.js';
 
 const Card = (props) => (
-  <div>
+  <div className="container">
     <CardHeader
       impression={props.impression}
       movie={props.movie}
