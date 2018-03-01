@@ -1,5 +1,5 @@
 /* Customize the label (the container) */
-.radioContainer {
+.radio-container {
   display: block;
   position: relative;
   padding-left: 3.5rem;
@@ -13,7 +13,7 @@
 }
 
 /* Hide the browser's default radio button */
-.radioContainer input {
+.radio-container input {
   position: absolute;
   opacity: 0;
 }
@@ -23,19 +23,19 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
+  height: 2.5rem;
+  width: 2.5rem;
   background-color: lighten($off-black, 50%);
   border-radius: 50%;
 }
 
 /* On mouse-over, add a grey background color */
-.radioContainer:hover input ~ .radio {
+.radio-container:hover input ~ .radio {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.radioContainer input:checked ~ .radio {
+.radio-container input:checked ~ .radio {
   background-color: $stage-curtain;
 }
 
@@ -47,16 +47,16 @@
 }
 
 /* Show the indicator (dot/circle) when checked */
-.radioContainer input:checked ~ .radio:after {
+.radio-container input:checked ~ .radio:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.radioContainer .radio:after {
+.radio-container .radio:after {
   top: 9px;
   left: 9px;
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: white;
+  background: $off-white;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const RadioButton = (props) => (
-  <div className="radioContainer">
+  <div className="radio-container">
     <label>
       {props.difficulty}
       <input 

@@ -4,7 +4,7 @@ import RadioButton from './RadioButton.js';
 
 const ControlGroup = (props) => (
   <div className="whitebox">
-    <div className="info">
+    <div className="sub-whitebox info">
       <p>
         This game pairs a random famous person or character with a random famous
         movie quote. Try acting out the quote below in your best impression of the selected 
@@ -13,7 +13,7 @@ const ControlGroup = (props) => (
       </p>
     </div>
     <div className="box">
-      <div className="sub-box">
+      <div className="sub-box right">
         <form>
           <RadioButton
             difficulty='easy'
@@ -32,7 +32,7 @@ const ControlGroup = (props) => (
           />
         </form>
       </div>
-      <div className="sub-box">
+      <div className="sub-box left">
         <NextButton 
           update={props.update}
         />
@@ -40,9 +40,5 @@ const ControlGroup = (props) => (
     </div>
   </div>
 );
-
-
-
-
 
 export default ControlGroup;

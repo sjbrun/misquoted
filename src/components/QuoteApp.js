@@ -8,17 +8,29 @@ const impressions = {'easy': ['Arnold Schwarzenegger', 'Sylvester Stallone',
                               'Sean Connery', 'John F. Kennedy', 'Donald Trump',
                               'Christopher Walken', 'Batman', 'Keanu Reeves',
                               'Gilbert Gottfried', 'George W. Bush', 'Yoda',
-                              'Darth Vader'
+                              'Darth Vader', 'Jack Nicholson', 'Gollum',
+                              'Daffy Duck', 'Bugs Bunny', 'Elvis Presley',
+                              'Fran Drescher', 'Woody Allen', 'Paris Hilton',
+                              'Super Mario', 'Elmo'
                              ],
                      'medium': ['James Stewart','Barack Obama', 'Matthew McConaughey',
                                 'Nicolas Cage', 'Michael Caine', 'Al Pacino',
                                 'Bane', 'Abraham Lincoln', 'Jar Jar Binks',
-                                'Fran Drescher', 'Celine Dion', 'Robert De Niro',
-                                'Goofy Goof', 'Werner Herzog', 'Mickey Mouse'
+                                'Celine Dion', 'Robert De Niro', 'Kim Kardashian',
+                                'Goofy Goof', 'Werner Herzog', 'Mickey Mouse',
+                                'Marlon Brando', 'Bill Clinton', 'Dolly Parton',
+                                'John Wayne', 'William Shatner', 'Homer Simpson',
+                                'Eric Cartman', 'Michael Jackson', 'Steve Irwin',
+                                'Jerry Seinfeld', 'Kermit the Frog', 'Drew Barrymore',
+                                'Eminem', 'Cortney Love', 'Meatwad', 'Beavis and Butthead',
+                                'Pikachu', 'Tom Brokaw', 'Elmer Fudd', 'Cookie Monster',
+                                'Tom Waits', 'Frank Sinatra'
                                ],
                      'difficult': ['Edward G. Robinson', 'Jimmy Carter', 'Roseanne Barr', 
                                    'Joan Rivers', 'Bette Midler', 'Oprah Winfrey',
-                                   'Carol Channing', 'Chewbacca'
+                                   'Carol Channing', 'Chewbacca', 'Alan Rickman',
+                                   'R2D2', 'Scooby Doo', 'The Swedish Chef',
+                                   'Taylor Swift'
                                   ]
                     };
 
