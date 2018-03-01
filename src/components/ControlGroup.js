@@ -8,10 +8,8 @@ const ControlGroup = (props) => (
       <p>
         This game pairs a random famous person or character with a random famous
         movie quote. Try acting out the quote below in your best impression of the selected 
-        person. Can your friends correctly guess the movie and the impression?
-      </p>
-      <p>
-        Select the difficulty or retrieve a new card below.
+        person. Can your friends correctly guess the impression and the movie? Select the 
+        difficulty and retrieve a new card below.
       </p>
     </div>
     <div className="box">
