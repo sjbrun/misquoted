@@ -1,23 +1,24 @@
 import React from 'react';
 import Header from './Header.js';
 import Card from './Card.js';
-import NextButton from './NextButton.js';
+import ControlGroup from './ControlGroup.js';
 var unirest = require('unirest');
 
 const impressions = {'easy': ['Arnold Schwarzenegger', 'Sylvester Stallone',
                               'Sean Connery', 'John F. Kennedy', 'Donald Trump',
                               'Christopher Walken', 'Batman', 'Keanu Reeves',
-                              'Gilbert Gottfried', 'George W. Bush', 'Yoda'
+                              'Gilbert Gottfried', 'George W. Bush', 'Yoda',
+                              'Darth Vader'
                              ],
                      'medium': ['James Stewart','Barack Obama', 'Matthew McConaughey',
                                 'Nicolas Cage', 'Michael Caine', 'Al Pacino',
                                 'Bane', 'Abraham Lincoln', 'Jar Jar Binks',
                                 'Fran Drescher', 'Celine Dion', 'Robert De Niro',
-                                'Goofy Goof', 'Werner Herzog'
+                                'Goofy Goof', 'Werner Herzog', 'Mickey Mouse'
                                ],
                      'difficult': ['Edward G. Robinson', 'Jimmy Carter', 'Roseanne Barr', 
                                    'Joan Rivers', 'Bette Midler', 'Oprah Winfrey',
-                                   'Carol Channing'
+                                   'Carol Channing', 'Chewbacca'
                                   ]
                     };
 
@@ -101,10 +102,14 @@ export default class QuoteApp extends React.Component {
     return (
       <div>
         <Header />
-        <div>
-          <NextButton
-            update={this.update}
-          />
+        <div className="container">
+          <div>
+            <ControlGroup
+              selectedDifficulty={this.state.selectedDifficulty}
+              handleChangeDifficulty={this.handleChangeDifficulty}
+              update={this.update}
+            />
+          </div>
           <Card
             quote={this.state.quote}
             movie={this.state.movie}
@@ -113,8 +118,6 @@ export default class QuoteApp extends React.Component {
             release_date={this.state.release_date}
             impression={this.state.impression}
             impression_photo={this.state.impression_photo}
-            selectedDifficulty={this.state.selectedDifficulty}
-            handleChangeDifficulty={this.handleChangeDifficulty}
           />
         </div>
       </div>

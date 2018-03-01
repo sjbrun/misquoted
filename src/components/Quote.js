@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Quote = (props) => (
-  <div>
+  <div className="quote">
     <blockquote className="blockquote">
       {props.quote}
       <cite>
