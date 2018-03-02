@@ -24,7 +24,7 @@ const impressions = {'easy': ['Arnold Schwarzenegger', 'Sylvester Stallone',
                                 'Jerry Seinfeld', 'Kermit the Frog', 'Drew Barrymore',
                                 'Eminem', 'Cortney Love', 'Meatwad', 'Beavis and Butthead',
                                 'Pikachu', 'Tom Brokaw', 'Elmer Fudd', 'Cookie Monster',
-                                'Tom Waits', 'Frank Sinatra'
+                                'Tom Waits', 'Frank Sinatra', 'Donald Duck'
                                ],
                      'difficult': ['Edward G. Robinson', 'Jimmy Carter', 'Roseanne Barr', 
                                    'Joan Rivers', 'Bette Midler', 'Oprah Winfrey',

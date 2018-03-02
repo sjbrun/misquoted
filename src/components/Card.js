@@ -1,11 +1,11 @@
 import React from 'react';
 import Quote from './Quote.js';
-import Movie from './Movie.js';
-import Impression from './Impression.js';
+import Images from './Images.js';
 import CardHeader from './CardHeader.js';
+import Summary from './Summary.js';
 
 const Card = (props) => (
-  <div>
+  <div className="card">
     <CardHeader
       impression={props.impression}
       movie={props.movie}
@@ -15,25 +15,13 @@ const Card = (props) => (
       movie={props.movie}
       release_date={props.release_date}
     />
-    <div className="box">
-      <div className="sub-box">
-        <Impression 
-          impression={props.impression}
-          impression_photo={props.impression_photo}
-          selectedDifficulty={props.selectedDifficulty}
-          handleChangeDifficulty={props.handleChangeDifficulty}
-        />
-      </div>
-      <div className="sub-box">
-
-        <Movie
-          movie={props.movie}
-          release_date={props.release_date}
-          poster={props.poster}
-          overview={props.overview}
-        />
-      </div>
-    </div>
+    <Summary
+      overview={props.overview}
+    />
+    <Images 
+      impression_photo={props.impression_photo}
+      poster={props.poster}
+    />
   </div>
 );
 

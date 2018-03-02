@@ -5,7 +5,7 @@ html {
 body {
   font-family: Lato, Helvetica, Arial, sans-serif;
   font-size: $m-size;
-  background: $stage-curtain;
+  background: $off-black;
 }
 
 button {
@@ -20,5 +20,5 @@ img {
   height: auto;
   display: block;
   margin: auto;
-  padding: $l-size $m-size;
+  // padding: $l-size $m-size;
 }

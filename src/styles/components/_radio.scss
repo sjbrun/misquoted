@@ -1,8 +1,21 @@
+.radio-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: $l-size;
+  padding-bottom: $l-size;
+}
+
+.radio-box label {
+  color: $off-white;
+}
+
 /* Customize the label (the container) */
 .radio-container {
   display: block;
   position: relative;
   padding-left: 3.5rem;
+  padding-right: 1.6rem;
   margin-bottom: 1.2rem;
   // cursor: pointer;
   font-size: 2.2rem;
@@ -36,7 +49,7 @@
 
 /* When the radio button is checked, add a blue background */
 .radio-container input:checked ~ .radio {
-  background-color: $stage-curtain;
+  background-color: $pastel-yellow;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -53,10 +66,10 @@
 
 /* Style the indicator (dot/circle) */
 .radio-container .radio:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
+  top: 0.9rem;
+  left: 0.9rem;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
-  background: $off-white;
+  background: $off-black;
 }
