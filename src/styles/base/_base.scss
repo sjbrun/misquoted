@@ -20,5 +20,10 @@ img {
   height: auto;
   display: block;
   margin: auto;
-  // padding: $l-size $m-size;
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 33%;
+  }
 }

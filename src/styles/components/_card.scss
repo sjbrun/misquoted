@@ -40,3 +40,17 @@
   padding-right: $xl-size;
   padding-top: $m-size;
 }
+
+@media (max-width: 700px) {
+  .card__header .impression__title {
+    font-size: $mobile-sp-size;
+  }
+
+  .card__header .in {
+    font-size: 2.0rem;
+  }
+
+  .card__header .movie__title {
+    font-size: $mobile-sp-size;
+  }
+}
