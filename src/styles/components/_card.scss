@@ -41,6 +41,11 @@
   padding-top: $m-size;
 }
 
+.tmdb {
+  max-width: 50%;
+  padding-top: $m-size;
+}
+
 @media (max-width: 700px) {
   .card__header .impression__title {
     font-size: $mobile-sp-size;
@@ -52,5 +57,10 @@
 
   .card__header .movie__title {
     font-size: $mobile-sp-size;
+  }
+
+  .tmdb {
+    height: 2.6rem;
+    width: 2.9rem;
   }
 }

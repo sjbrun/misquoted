@@ -1,4 +1,5 @@
 import React from 'react';
+import tmdb_img from '../images/tmdb.png';
 
 const Images = (props) => (
   <div className="box">
@@ -7,6 +8,7 @@ const Images = (props) => (
     </div>
     <div className="sub-box">
       <img src={props.poster}/>
+      <img src={tmdb_img} className="tmdb"/>
     </div>
   </div>
 );

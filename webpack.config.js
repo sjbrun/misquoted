@@ -40,7 +40,7 @@ module.exports = (env) => {
           ]
         })
       }, {
-        test: /\.(ttf|eot|woff|woff2)$/,
+        test: /\.(png|ttf|eot|woff|woff2)$/,
         loader: 'file-loader',
         exclude: /node_modules/,
         options: {

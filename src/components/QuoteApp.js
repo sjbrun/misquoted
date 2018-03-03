@@ -1,7 +1,8 @@
 import React from 'react';
-import Header from './Header.js';
 import Card from './Card.js';
 import ControlGroup from './ControlGroup.js';
+import Footer from './Footer.js';
+import Header from './Header.js';
 var unirest = require('unirest');
 
 const impressions = {'easy': ['Arnold Schwarzenegger', 'Sylvester Stallone',
@@ -132,6 +133,7 @@ export default class QuoteApp extends React.Component {
             impression_photo={this.state.impression_photo}
           />
         </div>
+        <Footer />
       </div>
     );
   }
