@@ -52,13 +52,14 @@ export default class QuoteApp extends React.Component {
 
   update = () => {
     const me = this;
-    unirest.get('https://andruxnet-random-famous-quotes.p.mashape.com/?count=10&cat=movies')
+    unirest.get('https://andruxnet-random-famous-quotes.p.mashape.com/?count=100&cat=movies')
             .header('X-Mashape-Key', 'CFNTDXmQQzmsh8PVm9cbsQXzJcgVp1ow9lfjsntqC5362GCI83')
             .header('X-Mashape-Host', 'andruxnet-random-famous-quotes.p.mashape.com')
             .end(function(response) {
+              const movie = response.body[Math.floor(Math.random() * 10)]
               me.setState((state) => ({
-                quote: response.body.quote,
-                movie: response.body.author,
+                quote: movie.quote,
+                movie: movie.author,
                 impression: impressions[state.selectedDifficulty][Math.floor(Math.random() * impressions[state.selectedDifficulty].length)]
             }), me.updateImages);
             });
@@ -91,7 +92,6 @@ export default class QuoteApp extends React.Component {
              const img = response.body.photos.photo[Math.floor(Math.random() * 20)];
              const flickr_image_path = 'https://farm' + img.farm + '.staticflickr.com/' + img.server + 
                              '/' + img.id + '_' + img.secret + '.jpg';
-             console.log('FLICKR:', flickr_image_path);
              me.setState((state) => ({
                impression_photo: flickr_image_path
              }));
